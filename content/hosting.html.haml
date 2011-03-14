@@ -1,0 +1,79 @@
+--- 
+title: Hosting
+---
+-content_for :splash do
+  %img#customizations{:alt => "", :src => "/images/customizations.gif"}/
+  .jacket
+    .tall
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} PeakAgile
+      %h2 $500/month
+      %ul.highlight
+        %li
+          %strong Dedicated
+          server
+        %li
+          %strong Unlimited
+      %ul
+        %li
+          %strong Automatic
+          updates
+        %li
+          %strong Support
+          inclusive
+      =render 'sign_up_button'
+    .short.no-r.box-buffer-left
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} Build
+      %h2 $500/month
+      %ul.highlight
+        %li
+          %strong Dedicated
+          Hudson
+      %ul
+        %li
+          %strong Automatic
+          updates
+        %li
+          %strong Support
+          inclusive
+      =render 'learn_more_button'
+    .short.no-r
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} Deploy
+      %h2 $1000/month
+      %ul.highlight
+        %li
+          %strong Private
+          ControlTier
+      %ul
+        %li
+          %strong Dedicated
+          test environment
+        %li
+          %strong Support
+          inclusive
+      =render 'learn_more_button'
+    .short.no-r
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} Report
+      %h2 $250/month
+      %ul.highlight
+        %li
+          %strong Dedicated
+          server
+      %ul
+        %li
+          %strong Automatic
+          updates
+        %li
+          %strong Support
+          inclusive
+      =render 'learn_more_button'
+
+
+%p &nbsp;
+%p &nbsp;
+%p &nbsp;
+%p &nbsp;
+

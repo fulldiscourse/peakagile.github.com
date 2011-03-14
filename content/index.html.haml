@@ -1,0 +1,40 @@
+--- 
+title: Home
+---
+
+-content_for :splash do
+  =render "splash"
+  
+
+.row-1
+  .wrapper
+    .col-1
+      .wrapper
+        .title
+          %img{:alt => "", :src => "/images/2page-title1.gif"}/
+        %h2 Product Vision
+        .indent-left
+          %p
+            Deliver a seamless integrated work environment to distributed software teams that
+            provides transparency and guarantees the delivery of high quality daily builds.
+          %h3.extra Automation Infrastructure
+          %p.extra3
+            The PeakAgile Platform core engine is a powerful automation infrastructure built using ControlTier. PeakAgile
+            uses ControlTier to manage PA Ledger, PA Build, PA Deploy, and PA Report. PeakAgile includes
+            custom ControlTier modules for automating.
+    .col-2
+      .info-box
+        .wrapper
+          %img{:alt => "", :src => "/images/box-title.gif"}/
+          %ul
+            %li
+              %a{:href => "#"} Build management
+            %li
+              %a{:href => "#"} Model based deployment
+            %li
+              %a{:href => "#"} Project reporting
+          %span
+            %a{:href => "/learnmore/index.html"} Learn More
+
+
+      

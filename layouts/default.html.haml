@@ -1,0 +1,41 @@
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title PeakAgile - A Platform to Optimize Agile Software Development
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "text/css", "http-equiv" => "Content-Style-Type"}
+    %link{:href => "/stylesheets/style.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/stylesheets/layout.css", :rel => "stylesheet", :type => "text/css"}
+    %script{:src => "/javascript/rollover.js", :type => "text/javascript"}
+  %body#page1.signup.signup4{:onload => "MM_preloadImages('/images/m1-act.gif','/images/m2-act.gif','/images/m3-act.gif','/images/m4-act.gif','/images/m5-act.gif')"}
+    #tail-top
+      #tail-bot
+        #tail-top-right
+        #main
+          #header
+            %a{:href => "/index.html"}
+              %img#logo{:alt => "", :src => "/images/logo.png"}/
+            #menu
+              -home_page = @items.find { |i| i.reps[0].path == '/' }
+              %ul
+                %li= link_to(home_page[:title], home_page.reps[0])
+                -home_page.children.each do |page| 
+                  %li= link_to(page[:title], page.reps[0])
+
+              %ul
+                %li
+                  %a{:href=>"/hosting/index.html", :onmouseout => "MM_swapImgRestore()", :onmouseover => "MM_swapImage('m1','','/images/m1-act.gif',1)"}
+                    %img#m1{:alt => "", :src => "#{@item.identifier == "/hosting/" ? '/images/m1-act.gif' : '/images/m1.gif'}"}
+                %li
+                  %a{:href => "/support/index.html", :onmouseout => "MM_swapImgRestore()", :onmouseover => "MM_swapImage('m2','','/images/m2-act.gif',1)"}
+                    %img#m2{:alt => "", :src => "#{@item.identifier == "/support/" ? '/images/m2-act.gif' : '/images/m2.gif'}"}/
+                %li
+                  %a{:href => "/download/index.html", :onmouseout => "MM_swapImgRestore()", :onmouseover => "MM_swapImage('m3','','/images/m3-act.gif',1)"}
+                    %img#m3{:alt => "", :src => "#{@item.identifier == "/download/" ? '/images/m3-act.gif' : '/images/m3.gif'}"}/
+                %li
+                  %a{:href => "/contact/index.html", :onmouseout => "MM_swapImgRestore()", :onmouseover => "MM_swapImage('m4','','/images/m4-act.gif',1)"}
+                    %img#m4{:alt => "", :src => "#{@item.identifier == "/contact/" ? '/images/m4-act.gif' : '/images/m4.gif'}"}/
+            =content_for @item, :splash
+          #content
+            =yield
+          #footer
+          

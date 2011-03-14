@@ -1,0 +1,62 @@
+-content_for :splash do
+  .jacket
+    .tall
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} PeakAgile
+      %h2 $250/month
+      %h3 Priority-support
+      %ul.highlight
+        %li
+          %strong 1
+          support incident
+      %ul
+        %li
+          %strong Patch/feature
+          notifications
+      =render 'sign_up_button'
+    .short.no-r.box-buffer-left
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} Build
+      %h2 $250/month
+      %ul.highlight
+        %li
+          %strong 1
+          support incident
+      %ul
+        %li
+          %strong Patch/feature
+          notifications
+      =render 'learn_more_button'
+    .short.no-r
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} Deploy
+      %h2 $500/month
+      %ul.highlight
+        %li
+          %strong 3
+          support incidents
+      %ul
+        %li
+          %strong Patch/feature
+          notifications
+      =render 'learn_more_button'
+    .short.no-r
+      %h1
+        %a{:href => "https://signup.37signals.com/campfire/max/signup/new", :onclick => "return sendOffsite(this, '/register/max')"} Report
+      %h2 $100/month
+      %ul.highlight
+        %li
+          %strong 1
+          support incident
+      %ul
+        %li
+          %strong Patch/feature
+          notifications
+      =render 'learn_more_button'
+    .footnote
+      %h3 *** Support is available for companies that choose to host PeakAgile themselves
+    
+%p &nbsp;
+%p &nbsp;
+%p &nbsp;
+%p &nbsp;

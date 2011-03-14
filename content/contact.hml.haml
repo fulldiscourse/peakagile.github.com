@@ -1,0 +1,20 @@
+-content_for :splash do
+  %form#contactForm{:action => "postdata/submit.php", :method => "POST", :name => "contactForm"}
+    .field
+      %label{:for => "firstname"} First name
+      %input#firstname.text{:name => "firstname", :type => "text"}/
+    .field
+      %label{:for => "lastname"} Last name
+      %input#lastname.text{:name => "lastname", :type => "text"}/
+    .field
+      %label{:for => "email"} Email
+      %input#email.text{:name => "email", :type => "text"}/
+    .field
+      %label{:for => "message"} How can we help you
+      %textarea#message{:name => "message"}
+    .controls
+      %input#Submit.Submit{:alt => " ", :name => "Submit", :type => "image", :value => "Submit"}/
+%p &nbsp;
+%p &nbsp;
+%p &nbsp;
+%p &nbsp;

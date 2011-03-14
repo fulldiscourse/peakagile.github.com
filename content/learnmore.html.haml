@@ -1,0 +1,79 @@
+-content_for :splash do
+  #header_left
+    %h1.extra Supported Technologies
+    %ul
+      %li Java, Ant, Maven, Grails
+      %li .NET, MSBuild, NAnt
+      %li iOS, iPhone, iPad, etc
+      %li Any project that can be build via shell
+  #header_right
+    %h1.extra Available Modules
+    %ul
+      %li Liquibase for database change management
+      %li Fitnesse for automated story test suite
+      %li Microsoft IIS provisioning
+      %li WSO2 ESB and WSAS provisioning
+
+
+
+.wrapper
+  %p
+    Please
+    %a{:href => "contact.html"} contact us
+    to sign up. We look forward to making your project more successful!
+.row-2
+  .line-ver-1
+    .line-ver-2
+      .wrapper-1
+        .col-1
+          .title-1
+            %img{:alt => "", :src => "/images/1page-title2.gif"}/
+          .info-box-1
+            %p
+              Automated continuous integration environment triggered by PA Ledger check-ins. With
+              integrated DB change management and automated test execution, daily builds become part of
+              the team's daily routine. Build failures reported automatically to facilitate rapid
+              resolution.
+        .col-2
+          .title-1
+            %img{:alt => "", :src => "/images/1page-title3.gif"}/
+          .info-box-2
+            %p
+              The "hard part" of the daily build process is now automated. Build a model of your
+              environment and each successful PA Build testing cycle gets deployed automatically!!
+              Developers no longer need to be distracted solving deployment problems.
+        .col-3
+          .title-1
+            %img{:alt => "", :src => "/images/1page-title4.gif"}/
+          .info-box-3
+            %p
+              Once PA Build and PA Deploy have done their work, automated project reports are triggered
+              automatically. Burn-downs, burn-ups, and testing results are emailed to the business team
+              every day. Achieve transparency and communicate effectively without time consuming status
+              meetings!!
+        .clear
+.row-2
+  .line-ver-1
+    .line-ver-2
+      .wrapper-1
+        .col-1
+          %div
+            %h2 Key Features
+            %ul.list
+              %li Model managed Hudson environment
+              %li Model versioned in Git
+              %li Seamless integration with PA Ledger projects
+        .col-2
+          %h2 Key Features
+          %ul.list
+            %li Model managed environments for PA Ledger projects
+            %li Model versioned in Git
+            %li Consistent, reliable deployments
+            %li Seamless integration with PA Build packages
+        .col-3
+          %h2 Key Features
+          %ul.list
+            %li PA Build test results for project stakeholders
+            %li PA Deploy status visibility for each environment
+            %li Access to release notes and change logs
+        .clear
