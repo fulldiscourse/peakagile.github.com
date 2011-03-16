@@ -5,5 +5,5 @@ git checkout master
 cp -R output/* .
 git add .
 git commit -a -m "Updated site on `date`"
-git push origin master
+git push github master
 git checkout source
